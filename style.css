@@ -4,15 +4,19 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url(/images/pattern-background-desktop.svg);
+  background-image: url(images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-color: hsl(225, 100%, 94%);
   font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .head {
-  width: 450px;
+  max-width: 450px;
   background-color: white;
   color: hsl(224, 23%, 55%);
   border-radius: 20px;
@@ -27,7 +31,7 @@ body {
 .title {
   color: hsl(223, 47%, 23%);
   font-weight: 900;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 
@@ -49,7 +53,7 @@ body {
 }
 
 .plan-container {
-  font-size: 16px;
+  font-size: 1rem;
   background-color: hsl(225, 100%, 98%);
   padding: 25px;
   border-radius: 12px;
@@ -61,7 +65,7 @@ body {
 
 .plan-container a {
   color: hsl(245, 75%, 52%);
-  font-size: 13px;
+  font-size: .812rem;
   font-weight: 700;
 }
 
@@ -107,8 +111,4 @@ button {
 
 .cancel-button:hover {
   color: black;
-}
-
-.attribution {
-  text-align: center;
 }
